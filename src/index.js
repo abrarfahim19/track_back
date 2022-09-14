@@ -7,7 +7,7 @@ const authRoutes = require("./routes/authRoutes");
 const trackRoutes = require("./routes/trackRoutes");
 const requireAuth = require("./middlewares/requireAuth");
 
-const port = process.env.production ? PORT: 3000
+const port = process.env.PORT || 3000;
 
 const app = express();
 
